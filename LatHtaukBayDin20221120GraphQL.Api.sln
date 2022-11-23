@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatHtaukBayDin20221120GraphQL.Api", "LatHtaukBayDin20221120GraphQL.Api\LatHtaukBayDin20221120GraphQL.Api.csproj", "{4106A6F4-214C-4659-A8D4-52DC6B456ED9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4106A6F4-214C-4659-A8D4-52DC6B456ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4106A6F4-214C-4659-A8D4-52DC6B456ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4106A6F4-214C-4659-A8D4-52DC6B456ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4106A6F4-214C-4659-A8D4-52DC6B456ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CE8F9C1-F656-4961-AA82-2E6F5BF8C6A9}
+	EndGlobalSection
+EndGlobal
