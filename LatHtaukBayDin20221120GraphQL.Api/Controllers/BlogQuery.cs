@@ -32,6 +32,8 @@ FETCH NEXT @rowCount ROWS ONLY;
             {
                 return db.Query<BlogModel>(query).ToList();
             }
+
+            //db.TblBlog.AsNoTracking().Skip(pageNo - 1 * rowCount).Take(rowCount).ToList();
         }
     }
 }
