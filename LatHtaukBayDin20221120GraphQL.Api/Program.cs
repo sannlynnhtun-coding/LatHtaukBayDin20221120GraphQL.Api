@@ -15,8 +15,10 @@ builder.Services.AddHttpClient();
 //    .AddQueryType<MinTheinKhaQuery>()
 //    .AddQueryType<CronQuery>();
 builder.Services.AddGraphQLServer().AddQueryType(q => q.Name("Query"))
+    .AddType<MinTheinKhaQuery>()
     .AddType<CronQuery>()
-    .AddType<MinTheinKhaQuery>();
+    .AddType<BlogQuery>()
+    ;
 
 var app = builder.Build();
 
