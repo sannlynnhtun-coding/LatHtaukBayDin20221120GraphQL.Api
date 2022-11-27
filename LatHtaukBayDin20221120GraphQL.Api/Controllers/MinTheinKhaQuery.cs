@@ -5,6 +5,7 @@ using System.Text.Json;
 
 namespace LatHtaukBayDin20221120GraphQL.Api.Controllers
 {
+    [ExtendObjectType("Query")]
     public class MinTheinKhaQuery
     {
         private readonly IHttpClientFactory _httpClientFactory;
