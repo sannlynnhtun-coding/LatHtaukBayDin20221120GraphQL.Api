@@ -15,10 +15,12 @@ namespace LatHtaukBayDin20221120GraphQL.Api.Controllers
         private void SetCronRecurring(Expression<Action> method, string cronScheduleExpression)
         {
             TimeZoneInfo zone = TimeZoneInfo.FindSystemTimeZoneById("Myanmar Standard Time");
-            var tt = method.Body.GetType().Name;
+           // var tt = method.Body.GetType().Name;
             // var tt1 = method.Body[MemberTypes].Name;
             //   var tt2 = method.Body().Name;
-            RecurringJob.AddOrUpdate(method, cronScheduleExpression, zone);
+            var methodName = ((MethodCallExpression)method.Body).Method.Name;
+            //var name = methodName.Name;
+            RecurringJob.AddOrUpdate(methodName, method, cronScheduleExpression, zone);
         }
 
         public CronQueryModel RunQueryRecurring(CronQueryModel cronQueryModel)
